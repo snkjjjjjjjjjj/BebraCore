@@ -1615,7 +1615,7 @@ world-settings:
           try-existing-chickens: true
         count-as-player-kill-when-angry: false
         takes-damage-from-water: false
-        always-drop-exp: false
+        always-drop-exp: true
         can-pick-up-loot: default
       vindicator:
         ridable: false
