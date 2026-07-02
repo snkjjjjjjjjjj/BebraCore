@@ -52,7 +52,7 @@ anticheat:
     use-permission: false
 chunks:
   auto-save-interval: default
-  delay-chunk-unloads-by: 10s
+  delay-chunk-unloads-by: 0s
   entity-per-chunk-save-limit:
     arrow: -1
     ender_pearl: -1
@@ -62,13 +62,13 @@ chunks:
     snowball: -1
   fixed-chunk-inhabited-time: -1
   flush-regions-on-save: false
-  max-auto-save-chunks-per-tick: 24
+  max-auto-save-chunks-per-tick: 200
   prevent-moving-into-unloaded-chunks: false
 collisions:
   allow-player-cramming-damage: false
   allow-vehicle-collisions: true
   fix-climbing-bypassing-cramming-rule: false
-  max-entity-collisions: 8
+  max-entity-collisions: 2147483647
   only-players-collide: false
 command-blocks:
   force-follow-perm-level: true
@@ -80,7 +80,7 @@ entities:
   behavior:
     allow-spider-world-border-climbing: true
     baby-zombie-movement-modifier: 0.5
-    cooldown-failed-beehive-releases: true
+    cooldown-failed-beehive-releases: false
     disable-chest-cat-detection: false
     disable-creeper-lingering-effect: false
     disable-player-crits: false
@@ -102,7 +102,7 @@ entities:
       skeletons: false
       zombies: false
     nerf-pigmen-from-nether-portals: false
-    only-merge-items-horizontally: false
+    only-merge-items-horizontally: true
     parrots-are-unaffected-by-player-movement: false
     phantoms-do-not-spawn-on-creative-players: true
     phantoms-only-attack-insomniacs: true
@@ -140,7 +140,7 @@ entities:
       enabled: false
       items:
         cobblestone: 300
-    count-all-mobs-for-spawning: false
+    count-all-mobs-for-spawning: true
     creative-arrow-despawn-rate: default
     despawn-range-shape: ELLIPSOID
     despawn-ranges:
@@ -175,16 +175,13 @@ entities:
     duplicate-uuid:
       mode: SAFE_REGEN
       safe-regen-delete-range: 32
-    filter-bad-tile-entity-nbt-from-falling-blocks: true
-    filtered-entity-tag-nbt-paths:
-    - Pos
-    - Motion
-    - sleeping_pos
+    filter-bad-tile-entity-nbt-from-falling-blocks: false
+    filtered-entity-tag-nbt-paths: []
     iron-golems-can-spawn-in-air: false
     max-arrow-despawn-invulnerability: 200
     monster-spawn-max-light-level: default
     non-player-arrow-despawn-rate: default
-    per-player-mob-spawns: true
+    per-player-mob-spawns: false
     scan-for-legacy-ender-dragon: true
     skeleton-horse-thunder-spawn-chance: default
     slime-spawn-height:
@@ -266,7 +263,7 @@ fixes:
   split-overstacked-loot: true
   tnt-entity-height-nerf: disabled
 hopper:
-  cooldown-when-full: true
+  cooldown-when-full: false
   disable-move-event: false
   ignore-occluding-blocks: false
 lootables:

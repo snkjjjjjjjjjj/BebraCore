@@ -57,19 +57,19 @@ console:
   has-all-permissions: false
 item-validation:
   book:
-    author: 8192
-    page: 16384
-    title: 8192
+    author: 2147483647
+    page: 2147483647
+    title: 2147483647
   book-size:
-    page-max: 2560
+    page-max: disabled
     total-multiplier: 0.98
-  display-name: 8192
-  lore-line: 8192
+  display-name: 2147483647
+  lore-line: 2147483647
   resolve-selectors-in-books: false
 messages:
   kick:
     authentication-servers-down: <lang:multiplayer.disconnect.authservers_down>
-    connection-throttle: Connection throttled! Please wait before reconnecting.
+    connection-throttle: Попробуйте зайти через несколько секунд.
     flying-player: <lang:multiplayer.disconnect.flying>
     flying-vehicle: <lang:multiplayer.disconnect.flying>
   no-permission: <red>I'm sorry, but you do not have permission to perform this command.
@@ -130,10 +130,10 @@ spark:
 time:
   affects-all-worlds: false
 unsupported-settings:
-  allow-headless-pistons: false
-  allow-permanent-block-break-exploits: false
-  allow-piston-duplication: false
-  allow-unsafe-end-portal-teleportation: false
+  allow-headless-pistons: true
+  allow-permanent-block-break-exploits: true
+  allow-piston-duplication: true
+  allow-unsafe-end-portal-teleportation: true
   oversized-item-component-sanitizer:
     dont-sanitize: []
   perform-username-validation: true
