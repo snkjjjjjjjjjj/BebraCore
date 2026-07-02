@@ -105,7 +105,7 @@ entities:
     only-merge-items-horizontally: true
     parrots-are-unaffected-by-player-movement: false
     phantoms-do-not-spawn-on-creative-players: true
-    phantoms-only-attack-insomniacs: true
+    phantoms-only-attack-insomniacs: false
     phantoms-spawn-attempt-max-seconds: 119
     phantoms-spawn-attempt-min-seconds: 60
     piglins-guard-chests: true
