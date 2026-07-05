@@ -96,13 +96,13 @@ misc:
 packet-limiter:
   all-packets:
     action: KICK
-    interval: 7.0
+    interval: -1.0
     max-packet-rate: 500.0
   kick-message: <red><lang:disconnect.exceeded_packet_rate>
   overrides:
     minecraft:place_recipe:
       action: DROP
-      interval: 4.0
+      interval: -1.0
       max-packet-rate: 5.0
 player-auto-save:
   max-per-tick: -1
@@ -119,7 +119,7 @@ scoreboards:
   save-empty-scoreboard-teams: true
   track-plugin-scoreboards: false
 spam-limiter:
-  incoming-packet-threshold: 300
+  incoming-packet-threshold: disabled
   recipe-spam-increment: 1
   recipe-spam-limit: 20
   tab-spam-increment: 1
