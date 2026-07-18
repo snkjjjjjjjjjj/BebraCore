@@ -1613,7 +1613,7 @@ world-settings:
           only-babies: true
           chance: 0.05
           try-existing-chickens: true
-        count-as-player-kill-when-angry: false
+        count-as-player-kill-when-angry: true
         takes-damage-from-water: false
         always-drop-exp: true
         can-pick-up-loot: default
